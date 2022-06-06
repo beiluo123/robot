@@ -23,16 +23,19 @@ body {
     color: #faf3fc;
     line-height: 55px;
     font-weight: normal;
-    float: left;
+    /* float: left; */
+    text-align: center;
     letter-spacing: 2px;
     margin-left: 25px;
     font-size: 18px;
     text-shadow: 0px 0px 5px #944846;
 }
 .header img {
+    width: 36px;
     float: right;
     margin: 7px 25px 0 0;
     border-radius: 20px;
+    border: 2px solid pink;
     box-shadow: 0 0 5px #f7f2fe;
 }
 .main {
@@ -56,18 +59,24 @@ body {
     overflow: hidden;
     margin: 20px 0px 30px;
 }
+.footer img,
+.talk_list .right_word img,
 .talk_list .left_word img {
+    width: 36px;
+    border-radius: 20px;
+    border: 2px solid pink;
+    box-shadow: 0 0 5px #f7f2fe;
     float: left;
     margin-left: 20px;
 }
 .talk_list .left_word span {
     float: left;
-    background-color: #fe9697;
+    background-color: #fff;
     padding: 10px 15px;
     max-width: 290px;
     border-radius: 12px;
     font-size: 16px;
-    color: #fff;
+    /* color: #fff; */
     margin-left: 13px;
     position: relative;
     line-height: 24px;
@@ -87,7 +96,7 @@ body {
 }
 .talk_list .right_word span {
     float: right;
-    background-color: #fff;
+    background-color: #95ec69;
     padding: 10px 15px;
     max-width: 290px;
     border-radius: 12px;
