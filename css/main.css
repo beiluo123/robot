@@ -1,24 +1,30 @@
 body {
     font-family: 'Microsoft YaHei';
+
 }
+
+
 .wrap {
     position: fixed;
-    width: 450px;
+    width: 98%;
+    max-width: 450px;
+    min-width: 375px;
     left: 50%;
-    margin-left: -225px;
-    top: 20px;
-    bottom: 20px;
-    border: 1px solid #ebebeb;
+    transform: translateX(-50%);
+    top: 5px;
+    bottom: 5px;
     background-color: #fff;
     border-radius: 10px;
     box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
     overflow: hidden;
 }
+
 .header {
     height: 55px;
     background: linear-gradient(90deg, rgba(246, 60, 47, 0.6), rgba(128, 58, 242, 0.6));
     overflow: hidden;
 }
+
 .header h3 {
     color: #faf3fc;
     line-height: 55px;
@@ -30,6 +36,7 @@ body {
     font-size: 18px;
     text-shadow: 0px 0px 5px #944846;
 }
+
 .header img {
     width: 36px;
     float: right;
@@ -38,6 +45,7 @@ body {
     border: 2px solid pink;
     box-shadow: 0 0 5px #f7f2fe;
 }
+
 .main {
     position: absolute;
     left: 0;
@@ -47,18 +55,21 @@ body {
     background-color: #f4f3f3;
     box-sizing: border-box;
     padding: 10px 0;
-    overflow:hidden;
+    overflow: hidden;
 }
-.talk_list{
+
+.talk_list {
     position: absolute;
-    width:100%;
-    left:0px;
-    top:0px;
+    width: 100%;
+    left: 0px;
+    top: 0px;
 }
+
 .talk_list li {
     overflow: hidden;
     margin: 20px 0px 30px;
 }
+
 .footer img,
 .talk_list .right_word img,
 .talk_list .left_word img {
@@ -69,6 +80,7 @@ body {
     float: left;
     margin-left: 20px;
 }
+
 .talk_list .left_word span {
     float: left;
     background-color: #fff;
@@ -81,6 +93,7 @@ body {
     position: relative;
     line-height: 24px;
 }
+
 .talk_list .left_word span:before {
     content: '';
     position: absolute;
@@ -90,10 +103,12 @@ body {
     height: 12px;
     background: url('../img/corner01.png') no-repeat;
 }
+
 .talk_list .right_word img {
     float: right;
     margin-right: 20px;
 }
+
 .talk_list .right_word span {
     float: right;
     background-color: #95ec69;
@@ -106,6 +121,7 @@ body {
     position: relative;
     line-height: 24px;
 }
+
 .talk_list .right_word span:before {
     content: '';
     position: absolute;
@@ -115,63 +131,82 @@ body {
     height: 12px;
     background: url('../img/corner02.png') no-repeat;
 }
-.drag_bar{
-    position:absolute;
-    right:0px;
-    top:0px;
+
+.drag_bar {
+    position: absolute;
+    right: 0px;
+    top: 0px;
     background-color: #fff;
-    height:100%;
-    width:6px;
-    box-sizing:border-box;
-    border-bottom:1px solid #f4f3f3;
+    height: 100%;
+    width: 6px;
+    box-sizing: border-box;
+    border-bottom: 1px solid #f4f3f3;
 }
-.drager{
-    position:absolute;
-    left:0px;
-    top:0px;
+
+.drager {
+    position: absolute;
+    left: 0px;
+    top: 0px;
     background-color: #cdcdcd;
-    height:100px;
-    width:6px;
-    border-radius:3px;
+    height: 100px;
+    width: 6px;
+    border-radius: 3px;
     cursor: pointer;
 }
 
-.footer{
-    width:100%;
+.footer {
+    width: 100%;
     height: 55px;
-    left:0px;
-    bottom:0px;
-    background-color:#fff;
+    left: 15px;
+    bottom: 0px;
+    background-color: #fff;
     position: absolute;
+    text-align: center;
 }
 
-.footer img{
-    float: left;
-    margin:8px 0 0 20px;
+.footer img {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
+    /* float: left; */
+    margin: 0;
+    margin-top: 8px;
 }
 
-.input_txt{
-    float: left;
-    width:270px;
-    height:37px;
-    border:0px;
+.input_txt {
+    /* float: left; */
+    width: 100%;
+    height: 37px;
+    border: 0px;
     background-color: #f4f3f3;
-    margin:9px 0 0 20px;
-    border-radius:8px;
-    padding:0px;
-    outline:none;
-    text-indent:15px;
+    margin-top: 9px;
+    border-radius: 8px;
+    padding: 0px;
+    outline: none;
+    text-indent: 15px;
 }
-.input_sub{
-    float: left;
-    width:70px;
-    height:37px;
-    border:0px;
+
+.input_sub {
+    /* float: left; */
+    text-align: center;
+    width: 100%;
+    max-width: 70px;
+    height: 37px;
+    border: 0px;
     background-color: #fe9697;
-    margin:9px 0 0 15px;
-    border-radius:8px;
-    padding:0px;
-    outline:none;
-    color:#fff;
-    cursor: pointer;    
+    padding: 0 10px;
+    margin-top: 9px;
+    margin-left: -10px;
+    border-radius: 8px;
+    /* padding: 0px; */
+    outline: none;
+    color: #fff;
+    cursor: pointer;
+    box-sizing: content-box;
+}
+
+.container-fluid {
+    margin: 0;
+    padding: 0;
 }

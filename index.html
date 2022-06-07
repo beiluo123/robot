@@ -5,20 +5,22 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/reset.css" />
   <link rel="stylesheet" href="css/main.css" />
   <script type="text/javascript" src="js/jquery-1.12.4.min.js"></script>
   <script type="text/javascript" src="js/jquery-ui.min.js"></script>
   <script type="text/javascript" src="js/jquery.mousewheel.js"></script>
+
   <title>聊天机器人</title>
 </head>
 
 <body>
-  <div class="wrap">
+
+  <div class="wrap container-fluid">
     <!-- 头部 Header 区域 -->
     <div class="header">
       <h3>云无月</h3>
-      <img src="img/person01.png" alt="icon" />
     </div>
     <!-- 中间 聊天内容区域 -->
     <div class="main">
@@ -35,10 +37,10 @@
       </div>
     </div>
     <!-- 底部 消息编辑区域 -->
-    <div class="footer">
-      <img src="img/person02.png" alt="icon" />
-      <input type="text" placeholder="说点什么吧..." class="input_txt" id="ipt" />
-      <input type="button" value="发 送" class="input_sub" id="btnSend" />
+    <div class="footer row">
+      <div class="col-xs-2"> <img src="img/person02.png" alt="icon" /></div>
+      <div class="col-xs-8"> <input type="text" placeholder="说点什么吧..." class="input_txt " id="ipt" /></div>
+      <div class="col-xs-2"><input type="button" value="发 送" class="input_sub " id="btnSend" /></div>
     </div>
   </div>
   <!-- 注意：只要为 audio 指定了新的 src 属性，而且指定了 autoplay，那么，语音就会自动播放 -->
