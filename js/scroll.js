@@ -116,27 +116,28 @@ $(function () {
             'top': y + moveY,
             'transition': ''
         });
-        // this.style.top = y + moveY + 'px'
-        // this.style.transition = ''
+
     })
     $list[0].addEventListener('touchend', function (e) {
         var top = this.style.top.slice(0, -2)
         $list.css({
             'transition': 'all .2s'
         });
-
-        if (top > 0) {
+        if ($listh <= $mainh) {
             $list.css({
                 'top': 0
             });
-        } else if (top < -($listh - $mainh)) {
-            $list.css({
-                'top': -($listh - $mainh)
-            });
+        } else {
+            if (top > 0) {
+                $list.css({
+                    'top': 0
+                });
+            } else if (top < -($listh - $mainh)) {
+                $list.css({
+                    'top': -($listh - $mainh)
+                });
+            }
         }
-
-
     })
-
 
 })
